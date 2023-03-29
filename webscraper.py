@@ -1,16 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = input("Enter ABC NEWS URL: ")  #Add any abc news article link here.
-html_source = requests.get(url)         #Retrieving abc news links source code.
-
-soup = BeautifulSoup(html_source.content, 'html5lib')    # Gathering elements within the link.
-for title in soup.find_all('title'):           
-    print(title.get_text())
-#Extracts Title of article.
-
+url = input("Enter ABC NEWS URL: ")  # Prints the instructions to CMD
+html_source = requests.get(url)
+soup = BeautifulSoup(html_source.content, 'html5lib')
 text = ''
-for text in soup.find_all(class_='_39n3n'):
-    print(text.get_text()) 
-#Extracts Content of article.                   
 
+for title in soup.find_all('title'):  # This line of code retrieves the article
+    print(title.get_text())
+
+for text in soup.find_all(class_='_39n3n'):  # This returns the content
+    print(text.get_text())
