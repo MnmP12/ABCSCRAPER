@@ -1,15 +1,17 @@
 import requests
 from pprint import pprint
 from bs4 import BeautifulSoup
+import PySimpleGUI as sg
 
+sg.theme("DarkBrown5")  # Colour of window
+# Contents of window
+layout = [[sg.Text('Enter ABC news article here:'), sg.InputText()],
+          [sg.Button('View')]]
+# Window creation
+window = sg.Window('ABCSCRAPER', layout)
 
-url = input("Enter ABC NEWS URL: ")  # Prints the instructions to CMD
-html_source = requests.get(url)
-soup = BeautifulSoup(html_source.content, 'html5lib')
-text = ''
-
-for title in soup.find_all('title'):  # This line of code retrieves the article
-    pprint(title.get_text())
-
-for text in soup.find_all(class_='_39n3n'):  # This returns the content
-    pprint(text.get_text())
+while True:
+    event, values = window.read()
+    if event == sg.WIN_CLOSED:  # if user closes window 
+        break
+    
