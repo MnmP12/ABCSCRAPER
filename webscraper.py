@@ -1,6 +1,3 @@
-import requests
-from pprint import pprint
-from bs4 import BeautifulSoup
 import PySimpleGUI as sg
 
 sg.theme("DarkBrown5")  # Colour of window
