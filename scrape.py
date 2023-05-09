@@ -2,14 +2,16 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# Code to input url
+# Accessing source code/gathering elements of html page
 url = input("Enter ABC NEWS URL: ")
 page = requests.get(url)
 soup = BeautifulSoup(page.content, "html.parser")
 text = ''
 
-for title in soup.find('title'):  # Retrieves title
+# Retrieves title of article 
+for title in soup.find('title'):  
     print(title.get_text())
 
-for text in soup.find_all(class_="paragraph_paragraph__3Hrfa"):  # Returns body
+# Returns body of article
+for text in soup.find_all(class_="paragraph_paragraph__3Hrfa"):  
     print(text.get_text())
