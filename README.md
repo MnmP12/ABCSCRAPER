@@ -12,3 +12,4 @@ ABCSCRAPER pulls the title/body content of any abc news article, making it easie
 # How to use
 Grab an [article](https://www.abc.net.au/news) and paste it into the input box.  
 Press view and enjoy your read.
+![opera_At2fxgYB8q](https://github.com/MnmP12/ABCSCRAPER/assets/126064159/4c7ab41d-89f9-4039-b628-7bfa3ea36724)
