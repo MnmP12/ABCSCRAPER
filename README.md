@@ -1,5 +1,5 @@
 # ABCSCRAPER
-Website scraper for ABC News articles.  
+Website scraper for ABC News articles with a basic PYGUI.  
 ABCSCRAPER pulls the title/body content of any abc news article, making it easier to access.
 
 # Setup
