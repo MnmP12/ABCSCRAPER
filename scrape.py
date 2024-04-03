@@ -1,6 +1,18 @@
 import PySimpleGUI as sg
-import requests
+import requests 
 from bs4 import BeautifulSoup
+
+
+headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'}
+
+url = "https://abcnews.go.com/"
+r = requests.get(url, headers=headers)
+
+
+r_html = r.text
+soup = BeautifulSoup(r_html, "html.parser")
+
+
 
 # Function to create the main window
 def make_first_win():
@@ -13,6 +25,10 @@ def make_first_win():
     
     return sg.Window("ABCSCRAPER", layout, finalize=True, grab_anywhere=True, size=(200, 200))  # Make the window movable
 
+
+    
+    
+
 # Main code
 window1 = make_first_win()
 
@@ -22,7 +38,7 @@ while True:
         break
     elif event.startswith('button_'):
         selected_index = int(event.split('_')[1])
-        print(f"You pressed button {selected_index}")
+        print(f"Opening Article {selected_index}")
 
 
 
