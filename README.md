@@ -7,7 +7,7 @@ ABCSCRAPER pulls the top 7 articles of the day from https://abcnews.go.com/ , pr
 2. Clone/download this repository  
 3. Open repository folder in your IDE/github desktop terminal.  
 4. Run `pip install -r requirements.txt` ( for modules )  
-5. Run `py scrape.py`
+5. Run `scrape.py`
 
 # How to use
 Press whichever headline catches your eye, Enjoy!
