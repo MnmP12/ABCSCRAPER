@@ -1,15 +1,16 @@
 # ABCSCRAPER
 Website scraper for ABC News articles with a basic PYGUI.  
-ABCSCRAPER pulls the title/body content of any abc news article, making it easier to access.
+ABCSCRAPER pulls the top 7 articles of the day from https://abcnews.go.com/ , previews them in a new window and provides a link to read the full article.
 
 # Setup
 1. Download the latest version of [python](https://www.python.org/downloads/)  
 2. Clone/download this repository  
 3. Open repository folder in your IDE/github desktop terminal.  
 4. Run `pip install -r requirements.txt` ( for modules )  
-5. Run `py scrape.py`
+5. Run `scrape.py`
+
+![scraper 1](https://github.com/MnmP12/ABCSCRAPER/assets/126064159/837b2e1c-6fc7-4cdd-817c-8503ebda94c7)![scraper 2](https://github.com/MnmP12/ABCSCRAPER/assets/126064159/08d489b9-1234-4c99-b3b9-022fd9fadfad)
+
 
 # How to use
-Grab an [article](https://www.abc.net.au/news) and paste it into the input box.  
-Press view and enjoy your read.
-![opera_At2fxgYB8q](https://github.com/MnmP12/ABCSCRAPER/assets/126064159/4c7ab41d-89f9-4039-b628-7bfa3ea36724)
+Press whichever headline catches your eye, and enjoy reading!
