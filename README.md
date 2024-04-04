@@ -9,7 +9,8 @@ ABCSCRAPER pulls the top 7 articles of the day from https://abcnews.go.com/ , pr
 4. Run `pip install -r requirements.txt` ( for modules )  
 5. Run `scrape.py`
 
-![scraper 1](https://github.com/MnmP12/ABCSCRAPER/assets/126064159/837b2e1c-6fc7-4cdd-817c-8503ebda94c7)![scraper 2](https://github.com/MnmP12/ABCSCRAPER/assets/126064159/08d489b9-1234-4c99-b3b9-022fd9fadfad)
+![scraper 1](https://github.com/MnmP12/ABCSCRAPER/assets/126064159/837b2e1c-6fc7-4cdd-817c-8503ebda94c7)![scraper 2](https://github.com/MnmP12/ABCSCRAPER/assets/126064159/ea305dd6-134c-46e2-a105-51a806201b68)
+
 
 
 # How to use
