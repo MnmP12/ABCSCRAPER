@@ -1,5 +1,5 @@
 # ABCSCRAPER
-Website scraper for ABC News articles with a basic PYGUI.  
+Website scraper for ABC News articles with PYGUI.  
 ABCSCRAPER pulls the top 7 articles of the day from https://abcnews.go.com/ , previews them in a new window and provides a link to read the full article.
 
 # Setup
