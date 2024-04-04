@@ -32,7 +32,7 @@ def scrape_headline(index):
     return headline, url
 
 def generate_summary(article):
-    max_length = 200  # Adjust the maximum length of the summary as needed
+    max_length = 150  # Adjust the maximum length of the summary as needed
     if len(article) <= max_length:
         return article
     else:
